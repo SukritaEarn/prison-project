@@ -1,10 +1,4 @@
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
+.background {
+    background-image: linear-gradient(to right, rgb(128, 248, 228) , rgb(118, 205, 255));
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+}

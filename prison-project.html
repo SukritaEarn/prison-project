@@ -3,16 +3,17 @@
         <title>Prison</title>
         <link rel="stylesheet" href="prison-style.css">
     </head>
+        <h1>Controller</h1>
         <style>
             .button {
               display: inline-block;
-              border-radius: 3px;
-              background-color: #f4511e;
+              border-radius: 8px;
+              background-color: #18a02a;
               border: none;
               color: #FFFFFF;
               text-align: center;
               font-size: 20px;
-              padding: 20px;
+              padding: 16px;
               width: 100px;
               transition: all 0.5s;
               cursor: pointer;
@@ -44,29 +45,30 @@
               right: 0;
             }
         </style>
-    <body>
+    <body class="background">
+        <script src="prison-js.js"></script>
         <span>
             Buzzer:
         </span>
-        <span>
-            On/off
+        <span id="power_buzzer">
+            OFF
         </span>
-        <button class="button" style="vertical-align:middle"><span>Click </span></button>
+        <button class="button" style="vertical-align:middle" id="buzzer" onclick="changePower()"><span>Click </span></button>
         <br>
         <span>
             Light:
         </span>
         <span>
-            On/off
+            OFF
         </span>
-        <button class="button" style="vertical-align:middle"><span>Click </span></button>
+        <button class="button" style="vertical-align:middle" id="light"><span>Click </span></button>
         <br>
         <span>
             Door:
         </span>
         <span>
-            On/off
+            OFF
         </span>
-        <button class="button" style="vertical-align:middle"><span>Click </span></button>
+        <button class="button" style="vertical-align:middle" id="door"><span>Click </span></button>
     </body>
 </html>
