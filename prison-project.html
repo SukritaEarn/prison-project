@@ -3,7 +3,13 @@
         <title>Prison</title>
         <link rel="stylesheet" href="prison-style.css">
     </head>
-        <h1>Controller</h1>
+    <body class="background boder"></body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="head_size">Controller</h1>
         <style>
             .button {
               display: inline-block;
@@ -45,30 +51,45 @@
               right: 0;
             }
         </style>
-    <body class="background">
         <script src="prison-js.js"></script>
-        <span>
-            Buzzer:
+        <span class="buzzer_box">
+            <br>
+            <div class="font_size">
+                Buzzer
+            </div>
+            <br>
+            <br>
+            <div id="power_buzzer" class="power_size">
+                OFF
+            </div>
+            <br>
+            <button class="button" style="vertical-align:middle" id="buzzer" onclick="buzzer_click()"><span>Click </span></button>
         </span>
-        <span id="power_buzzer">
-            OFF
+        <span class="light_box">
+            <br>
+            <div class="font_size">
+                Light
+            </div>
+            <br>
+            <br>
+            <div class="power_size">
+                OFF
+            </div>
+            <br>
+            <button class="button" style="vertical-align:middle" id="light"><span>Click </span></button>
         </span>
-        <button class="button" style="vertical-align:middle" id="buzzer" onclick="changePower()"><span>Click </span></button>
-        <br>
-        <span>
-            Light:
+        <span class="door_box">
+            <br>
+            <div class="font_size">
+                Door
+            </div>
+            <br>
+            <br>
+            <div class="power_size">
+                OFF
+            </div>
+            <br>
+            <button class="button" style="vertical-align:middle" id="door"><span>Click </span></button>
         </span>
-        <span>
-            OFF
-        </span>
-        <button class="button" style="vertical-align:middle" id="light"><span>Click </span></button>
-        <br>
-        <span>
-            Door:
-        </span>
-        <span>
-            OFF
-        </span>
-        <button class="button" style="vertical-align:middle" id="door"><span>Click </span></button>
     </body>
 </html>
