@@ -7,6 +7,7 @@ let light_button_status = ''
 const check_status = () =>{fetch(baseURL + '/data/pepsitrophy')
                             .then((res) => res.json())
                             .then((data)=>{
+                                console.log(data)
                                 door_status = data['door']
                                 light_status = data['light']
                                 buzzer_status = data['buzzer']
