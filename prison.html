@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="prison-style.css">
     </head>
     <body class="background boder"></body>
+        <script src="script_prison.js"></script>    
         <br>
         <br>
         <br>
@@ -51,7 +52,6 @@
               right: 0;
             }
         </style>
-        <script src="prison-js.js"></script>
         <span class="buzzer_box">
             <br>
             <div class="font_size">
@@ -72,11 +72,11 @@
             </div>
             <br>
             <br>
-            <div class="power_size">
+            <div id="power_light">
                 OFF
             </div>
             <br>
-            <button class="button" style="vertical-align:middle" id="light"><span>Click </span></button>
+            <button class="button" style="vertical-align:middle" id="light" onclick="light_click()"><span>Click </span></button>
         </span>
         <span class="door_box">
             <br>
@@ -85,11 +85,11 @@
             </div>
             <br>
             <br>
-            <div class="power_size">
+            <div id="power_door">
                 OFF
             </div>
             <br>
-            <button class="button" style="vertical-align:middle" id="door"><span>Click </span></button>
+            <button class="button" style="vertical-align:middle" id="door" onclick="door_click()"><span>Click </span></button>
         </span>
     </body>
 </html>
